@@ -5,7 +5,7 @@ return {
                 name = "Sprigatito",
                 text = {
                     "{C:attention}+#3#{} hand size",
-                    "Get {C:money}#1#${} at end of round",
+                    "Get {C:money}$#1#{} at end of round",
                     "if {C:attention}5{} cards remaining in hand",
                     "{C:inactive,s:0.8}(Evolves after earning {C:money,s:0.8}#2#${C:inactive,s:0.8})",
                 }
@@ -14,7 +14,7 @@ return {
                 name = "Floragato",
                 text = {
                     "{C:attention}+#3#{} hand size",
-                    "Get {C:money}#1#${} at end of round",
+                    "Get {C:money}$#1#{} at end of round",
                     "if {C:attention}5{} cards remaining in hand",
                     "{C:inactive,s:0.8}(Evolves after earning {C:money,s:0.8}#2#${C:inactive,s:0.8})",
                 }
@@ -23,9 +23,9 @@ return {
                 name = "Meowscarada",
                 text = {
                     "{C:attention}+#2#{} hand size",
-                    "Earn {C:money}#1#${} at end of round",
-                    "Gains {C:money}+#3#${} of end of round payout",
-                    "if {C:attention}5{} cards remaining in hand at end of round",
+                    "Earn {C:money}$#1#{} at end of round",
+                    "Increase payout by {C:money}$#3#{} if {C:attention}5{} cards",
+                    "remain in hand at end of round",
                     
                 }
             },

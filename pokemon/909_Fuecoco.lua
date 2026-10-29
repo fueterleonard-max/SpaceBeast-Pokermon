@@ -17,7 +17,7 @@ local fuecoco={
     eternal_compat = true,
     calculate = function(self, card, context)
         if context.pre_discard and not context.blueprint then
-            if #context.full_hand == 5 then
+            if #context.full_hand >= 5 then
                 SMODS.scale_card(card, {
                     ref_value = "mult",
                     scalar_value = "mult_mod",
@@ -63,7 +63,7 @@ local crocalor={
     perishable_compat = false,
     calculate = function(self, card, context)
         if context.pre_discard and not context.blueprint then
-            if #context.full_hand == 5 then
+            if #context.full_hand >= 5 then
                 SMODS.scale_card(card, {
                     ref_value = "mult",
                     scalar_value = "mult_mod",

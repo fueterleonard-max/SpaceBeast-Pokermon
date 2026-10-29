@@ -9,7 +9,7 @@
     "badge_colour": "ED533A",
     "badge_text_colour": "FFFFFF",
     "display_name": "SpaceBeast Pokermon",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dependencies": [
         "Steamodded (>=26.829.0)",
         "Lovely (>=0.9)",

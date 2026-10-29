@@ -15,7 +15,7 @@ local quaxly = {
     perishable_compat = false,
     blueprint_compat = true,
     calculate = function(self, card, context)
-        if context.before and not context.blueprint and #context.full_hand == 5 then
+        if context.before and not context.blueprint and #context.full_hand >= 5 then
             SMODS.scale_card(card, {
                 ref_value = "chips",
                 scalar_value = "chip_mod",
@@ -59,7 +59,7 @@ local quaxwell = {
     perishable_compat = false,
     blueprint_compat = true,
     calculate = function(self, card, context)
-        if context.before and not context.blueprint and #context.full_hand == 5 then
+        if context.before and not context.blueprint and #context.full_hand >= 5 then
             SMODS.scale_card(card, {
                 ref_value = "chips",
                 scalar_value = "chip_mod",
@@ -94,7 +94,7 @@ local quaquaval = {
         return{vars = {center.ability.extra.chips, center.ability.extra.chip_mod, center.ability.extra.hands}}
     end,
     rarity = "poke_safari",
-    cost = 8,
+    cost = 10,
     stage = "One",
     ptype = "Water",
     atlas = "AtlasJokersBasicNatdex",
@@ -103,7 +103,7 @@ local quaquaval = {
     perishable_compat = false,
     blueprint_compat = true,
     calculate = function(self, card, context)
-        if context.before and not context.blueprint and #context.full_hand == 5 then
+        if context.before and not context.blueprint and #context.full_hand >= 5 then
             if #context.scoring_hand >= 5 then
                 SMODS.scale_card(card, {
                     ref_value = "chips",
