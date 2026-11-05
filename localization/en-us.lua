@@ -1,6 +1,38 @@
 return {
     descriptions = {
         Joker = {
+            j_pokespace_hatenna = {
+                name = "Hatenna",
+                text = {
+                    "{C:mult}+#1#{} mult",
+                    "{C:attention}Tripled{} if a {C:tarot}tarot{} card",
+                    "has been used this ante",
+                    "{C:inactive,s:0.8}(Evolves after using {C:attention}#2#{C:inactive,s:0.8} unique tarot card)",
+                }
+            },
+            j_pokespace_hattrem = {
+                name = "Hattrem",
+                text = {
+                    "Create a copy of the first {C:tarot}tarot{}", 
+                    "card used this ante",
+                    "{br:2}ERROR - CONTACT STEAK",
+                    "{C:mult}+#1#{} mult per {C:tarot}tarot{} card",
+                    "used this run",
+                    "{C:inactive,s:0.8}(Evolves at {C:mult,s:0.8}+#2#{C:inactive,s:0.8} / +20 Mult)",
+                }
+            },
+            j_pokespace_hatterene = {
+                name = "Hatterene",
+                text = {
+                    "Create a copy of the first {C:tarot}tarot{}",
+                    "card used this round",
+                    "{br:2}ERROR - CONTACT STEAK",
+                    "{X:mult,C:white}X#1#{} Mult per {C:tarot}tarot{} card",
+                    "used this run",
+                    "{C:inactive,s:0.8}(Currently {X:mult,C:white}X#2#{C:inactive,s:0.8} Mult)"
+
+                }
+            },
             j_pokespace_sprigatito = {
                 name = "Sprigatito",
                 text = {
